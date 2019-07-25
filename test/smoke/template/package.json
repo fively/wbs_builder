@@ -1,0 +1,46 @@
+{
+  "name": "u-wef",
+  "version": "1.0.0",
+  "description": "web",
+  "main": "index.js",
+  "author": "gjh",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.1.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.1.0",
+    "glob": "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "px2rem-loader": "^0.1.9",
+    "raw-loader": "0.5.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --open"
+  },
+  "dependencies": {
+    "lib-flexible": "^0.3.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "ios 7"
+  ]
+}
