@@ -7,7 +7,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open",
-    "eslint": "eslint ./lib --fix"
+    "eslint": "eslint ./lib --fix",
+    "test": "cross-env NODE_ENV=test nyc mocha"
   },
   "browserslist": [
     "last 2 version",
@@ -17,12 +18,15 @@
   "devDependencies": {
     "assert": "^2.0.0",
     "babel-eslint": "^10.0.2",
+    "babel-plugin-istanbul": "^5.2.0",
     "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.2",
     "glob-all": "^3.1.0",
     "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
     "rimraf": "^2.6.3"
   },
   "dependencies": {
